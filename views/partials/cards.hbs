@@ -1,0 +1,28 @@
+<div class="cards-container">
+    {{#each cards}}
+        <div class="card">
+            <div class="user-info">
+                <img src="https://via.placeholder.com/75x75" class="card-img" alt="avatar" width="75" height="75">
+                <ul class="user-info-list">
+                    <li><span class="card-username">{{this.user.username}} posted: <br><a class="card-title-url" href="{{this.post_url}}">{{this.title}}</a> </span></li>
+                </ul>
+                <time class="date">{{date this.created_at}}</time>
+
+            </div>
+            <br>
+            <div class="content">
+                <h6>Comments: </h6>
+                    <ul class="comments-section">
+                    {{#each comments}}
+                        <li class="comments"><span class="username">{{this.user.username}}</span> wrote: {{this.comment_text}}</li>
+                    {{/each}}
+                    </ul>
+                    <form class="comment-form" action="/api/comments">
+                        <label><input type="text" class="comments-input" id="input-{{this.id}}" name="comment_text" placeholder="Comment" value ></label>
+                        <label><input type="text" class="comments-input-id" id="id-{{this.id}}" name="post_id" value="{{this.id}}"/></label>
+                            <button class="submit-comment" type="submit">Send</button>
+                    </form>
+            </div>
+            </div>
+    {{/each}}
+</div>

@@ -1,0 +1,33 @@
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-left">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="/images/logo.svg" alt="c"/>
+        </a>
+
+        <a role="button" class="navbar-burger burger navbar-end" aria-label="menu" aria-expanded="false" data-target="navbarId">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    </div>
+    <div id="navbarId" class="navbar-menu">
+        <div class="navbar is-right">
+            {{#if logout}}
+                <form action="/authorize/logout" target="_self" method="post">
+                    <a class="navbar-item"><input type="submit" {{logout.action1}}/></a>
+                </form>
+            {{else}}
+                <a class="navbar-item" href="{{actions.href1}}">
+                    {{buttons.action1}}
+                </a>
+            <a class="navbar-item" href="{{actions.href2}}">
+                {{buttons.action2}}
+            </a>
+            {{/if}}
+        </div>
+    </div>
+    </div>
+</nav>

@@ -1,0 +1,12 @@
+{{> nav}}
+{{#if signedIn}}
+    <form class="new-post-form" id="new-posts" action="/api/posts" method="post">
+        <label><input type="text" name="title" placeholder="Title"></label>
+        <label><input type="text" placeholder="Enter the post's URL" name="post_url"></label>
+        <label><input type="submit" form="new-posts" value="Post"></label>
+    </form>
+    {{> cards}}
+{{else}}
+    {{> cards}}
+{{/if}}
+

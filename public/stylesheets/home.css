@@ -1,0 +1,120 @@
+nav{
+
+}
+.navbar img{
+    width: auto;
+    height: auto;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    background-color: rgba(3, 215, 163, 0.81);
+    width: auto;
+    color: whitesmoke;
+}
+.navbar-item{
+    color: darkslategray;
+}
+.navbar-burger{
+    float: right;
+    display: flex;
+}
+.card{
+    margin: 10px;
+    text-align: center;
+    max-height: 500px;
+    padding: 10px;
+}
+.date{
+    display: flex;
+    margin: 5px;
+    font-size: x-small;
+}
+.id{
+    visibility: hidden;
+}
+.card-title{
+
+}
+.user-info-list{
+    display: flex;
+    width: 100%;
+}
+
+
+li{
+    margin: 2px;
+    text-align: left;
+}
+a{
+    color: orange;
+    margin: auto;
+}
+.card-title:hover{
+    color: orangered;
+}
+.card-title-url{
+    text-decoration: auto;
+}
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    grid-template: auto / auto auto;
+    justify-content: space-evenly;
+    max-width: 800px;
+}
+.content{
+    display: grid;
+    grid-row-gap: 20px;
+}
+.comments-input{
+    max-height: 25px; border-radius: 10px;
+    border-style: none;
+    background-color: whitesmoke;
+    position: relative;
+    width: 75%;
+    float: left;
+    margin: 5px;
+
+}
+.submit-comment{
+    border: none;
+    margin-inline: 0;
+}
+.comments{
+    text-align: left;
+    list-style-type: none;
+    margin-bottom: 5px;
+    text-overflow: fade;
+}
+.card-username {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.card-img{
+    float: left;
+    margin: 10px;
+    border-radius: 200%;
+}
+.user-info{
+    display: flex;
+    box-shadow: rgba(120, 120, 120, 0.4) 0 0 5px;
+    height: 100px;
+    width: 100%;
+}
+.date{
+    margin-left: 10px;
+    float: right;
+}
+.comments-section{
+    background-color: whitesmoke;
+    margin: auto;
+}
+.username{
+    color: #1bbc9b;
+}
+.comments-input-id{
+    display: none;
+}
